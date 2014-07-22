@@ -1,75 +1,100 @@
-#nav {
-	width: auto;
+.nav {
+	display: block;
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	border: 0.1em solid #ccc;
+	overflow: auto;
+	width: 668px;
 }
 
 .lang {
+	font-family: sans-serif;
+	font-size: 15px;
 	float: left; 
-	color: #0066FF;
 	background-color: #fff;
-	border: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	padding: 10px 20px;
+	cursor: pointer; 
+	color: #555555;
 }
 
-.lang a {
-	display: block;
-	padding: 8px 15px;
-	color: inherit;
-	text-decoration: none;
-	font-weight: bold;
-	border-right: 1px solid #ccc; 
-}
-
-.lang a:hover {
-	color: #fff;
-	background-color: #000; 
+.lang:hover {
+	background-color: #E0E0D5;
 }
 
 .selected {
-	background-color: #000;
-	color: #fff;
+	background: #E0E0D5;
+}
+.source {
+	border-right: 0;
+	float:left;
 }
 
 .viewmore {	
-	width: 150px;
+	width: 2%;
 	text-align: center;
+	border-right: 0;
+}
+
+.viewmore:hover {
+	background-color: #fff;
 }
 
 .translate {
-	background-color: #476CDA;
-	color: #fff;
-	border-right: 0.2px;
+	color: #476CDA;
+	text-align: center;
+}
+
+.translate:hover {
+	background-color: #fff;
 }
 
 .action {
 	width:50px;
+	float:right;
 }
 
 .option {
 	clear: both;
-	width:200px;
-	background-color: #EEEEF0;
-	color: #000;
-	font-weight: bold;
-	border: 1px groove #ccc; 
-	line-height: 30px;
+	width:100px;
+	border: 1px solid #ccc; 
+	position: absolute;
 }
 
+.nav ul:after {
+	clear: both; 
+	display: block;
+}
+
+.action:hover {
+	cursor: pointer;
+}
+.perc {
+	border-right: 0;
+	width:12%;
+	color:#888888;
+}
+
+.perc:hover {
+	background-color: #fff;
+	cursor: default;
+}
 /** This makes submenus **/
-#nav li ul {
+.nav li ul {
+	height:auto; 
+	clear:both;
 	display: none;
 	list-style: none;
-	height: auto;									
 	margin: 0;
 	padding: 0;
 }
 
-#nav li ul li {
+.nav li ul li {
 	float:none;
 	text-align: left;
 }
 
-#nav li:hover ul {
+.nav li:hover ul {
 	display: block;
 }
