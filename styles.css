@@ -1,21 +1,27 @@
+.container {
+	display: table;
+	border-collapse: collapse;
+ 	/*border: 0.1em solid #ccc;*/
+ 	overflow:auto;
+}
+
 .nav {
-	display: block;
+	display: table-row;
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	border: 0.1em solid #ccc;
-	overflow: auto;
-	width: 668px;
+	border: 0.1em solid #EBEBEB;
 }
 .nav li {
 	float:left;
 }
 
 .lang {
+	display: table-cell;
 	font-family: sans-serif;
 	font-size: 15px;
 	background-color: #fff;
-	border-right: 1px solid #ccc;
+	border-right: 0.1em solid #ccc;
 	padding: 10px 20px;
 	cursor: pointer; 
 	color: #555555;
@@ -38,32 +44,25 @@
 }
 
 .viewmore {	
-	width: 2%;
+	width: 10px;
 	text-align: center;
 	border-right: 0;
-}
-
-.viewmore:hover {
-	background-color: #fff;
 }
 
 .translate {
 	color: #476CDA;
 	text-align: center;
+	padding: 0.6em 0 0.6em 0;
+	width: 100%;
 }
 
 .translate:hover {
 	background-color: #fff;
 }
 
-.action {
-	width:50px;
-}
-
 .option {
 	clear: both;
-	width:100px;
-	border: 1px solid #ccc; 
+	border: 0.1em solid #ccc; 
 	position: absolute;
 }
 
@@ -77,7 +76,8 @@
 }
 .perc {
 	border-right: 0;
-	width:12%;
+	width:14%;
+	text-align: center;
 	color:#888888;
 }
 
